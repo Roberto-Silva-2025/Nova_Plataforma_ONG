@@ -1,0 +1,17 @@
+/* Feedbacks */
+.alert {
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-2);
+}
+.alert-success { background: #e8f5e9; color: var(--color-success); }
+.alert-error { background: #fdecea; color: var(--color-error); }
+.toast {
+  position: fixed; bottom: var(--space-2); right: var(--space-2);
+  background: var(--color-secondary); color: white;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  display: none;
+}
+.toast.show { display: block; animation: fadein 0.3s; }
+@keyframes fadein { from {opacity:0;} to {opacity:1;} }

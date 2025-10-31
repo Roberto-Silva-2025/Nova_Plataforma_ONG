@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cadastro para voluntários e doadores">
+    <title>Cadastro - ONG X</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">ONG X</a>
+            <nav aria-label="Menu principal">
+                <ul class="nav">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projeto.html">Projeto</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cadastro" aria-labelledby="cadastro-title">
+            <div class="container">
+                <h1 id="cadastro-title">Cadastro</h1>
+                <p>Preencha o formulário abaixo para se cadastrar como voluntário, doador ou parceiro.</p>
+                
+                <form id="form-cadastro">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        
+                        <label for="nome">Nome Completo</label>
+                        <input id="nome" name="nome" type="text" required>
+                        
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" required>
+                        
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" name="telefone" type="tel" 
+                               pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(12) 91234-5678" required>
+
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input id="nascimento" name="nascimento" type="date" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        
+                        <label for="cep">CEP</label>
+                        <input id="cep" name="cep" type="text" 
+                               pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+
+                        <label for="endereco">Endereço</label>
+                        <input id="endereco" name="endereco" type="text" required>
+
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" name="cidade" type="text" required>
+
+                        <label for="estado">Estado</label>
+                        <select id="estado" name="estado" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        
+                        <label for="interesse">Interesse</label>
+                        <select id="interesse" name="interesse" required>
+                            <option value="" disabled selected>Escolha</option>
+                            <option value="voluntario">Voluntariado</option>
+                            <option value="doador">Doações</option>
+                            <option value="parceiro">Parceria</option>
+                        </select>
+
+                        <label for="mensagem">Mensagem (opcional)</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                    </fieldset>
+
+                    <button type="submit">Enviar cadastro</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; ONG X</div>
+    </footer>
+
+    <script src="js/masks.js" defer></script>
+</body>
+</html>

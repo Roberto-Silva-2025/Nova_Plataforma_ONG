@@ -1,0 +1,37 @@
+:root {
+  /* 🎨 Paleta de cores (8 cores mín.) */
+  --color-primary: #2a9d8f;
+  --color-primary-light: #51c3b5;
+  --color-secondary: #264653;
+  --color-secondary-light: #3a6b7b;
+  --color-accent: #e76f51;
+  --color-success: #4CAF50;
+  --color-warning: #FFB703;
+  --color-error: #E63946;
+  --color-bg: #ffffff;
+  --color-surface: #f7f9fb;
+  --color-text: #1d1d1d;
+  --color-text-light: #666666;
+
+  /* 🧱 Espaçamento (escala modular) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* ✍️ Tipografia */
+  --font-base: "Inter", system-ui, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.75rem;
+  --font-size-xxl: 2.5rem;
+
+  /* 🧩 Bordas e sombras */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-md: 0 2px 6px rgba(0,0,0,0.08);
+}
